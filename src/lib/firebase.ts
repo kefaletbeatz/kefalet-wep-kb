@@ -2,14 +2,16 @@ import { initializeApp, getApps } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "BURAYA_API_KEY",
-  authDomain: "BURAYA_AUTH_DOMAIN",
-  databaseURL: "BURAYA_DATABASE_URL",
-  projectId: "BURAYA_PROJECT_ID",
-  storageBucket: "BURAYA_STORAGE_BUCKET",
-  messagingSenderId: "BURAYA_MESSAGING_SENDER_ID",
-  appId: "BURAYA_APP_ID"
+  apiKey: "AIzaSyIZBkBOOZ4UbaEla-F6bYRdocmjmYGaONhypQ",
+  authDomain: "kefalet-store.firebaseapp.com",
+  databaseURL: "https://kefalet-store-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "kefalet-store",
+  storageBucket: "kefalet-store.firebasestorage.app",
+  messagingSenderId: "394603792093",
+  appId: "1:394603792093:web:a23567c78992448b233d34",
+  measurementId: "GTV11WLVSQL"
 };
 
 const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
+
 export const db = getDatabase(app);
