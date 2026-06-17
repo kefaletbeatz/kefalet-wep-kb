@@ -60,7 +60,7 @@ export default function Home() {
     const unsubCategories = onValue(ref(db, "categories"), snap => {
       const list: string[] = [];
       snap.forEach(child => { if (child.val()) list.push(child.val()); });
-      if (list.length) setCategories([...new Set(list)]);
+      if (list.length) setCategories(Array.from(new Set(list)));
     });
     return () => { unsubProducts(); unsubCategories(); };
   }, []);
