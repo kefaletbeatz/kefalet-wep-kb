@@ -266,6 +266,14 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
+            <a
+  className="btn gold"
+  href="https://drive.google.com/file/d/1I-y-oU819348fyl4iKu1hwJlWnp2rIQI/view?usp=sharing"
+  target="_blank"
+  rel="noreferrer"
+>
+  📱 Android Uygulamasını İndir
+</a>
             💬 WhatsApp
           </a>
         </div>
